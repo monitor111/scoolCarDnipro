@@ -1,0 +1,550 @@
+/* ЗАГАЛЬНІ СТИЛІ */
+:root {
+    --accent-color: white; /* Исправлено название цвета */
+    --bg-color: #d9d9d9;
+}
+
+body {
+    overflow-x: hidden;
+    min-width: 320px;
+    font-family: 'Poppins', sans-serif;
+     
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+
+
+header {
+    width: 100%;
+    background-color: #fff;
+    height: 200px;
+}
+
+.container {
+    max-width: none;
+}
+
+.headerfon {
+    background-color: var(--accent-color);
+}
+
+.logo {
+    margin-top: 65px;
+    transform: scale(1.8);
+}
+
+.logo-img {
+    position: absolute; top: -25%; left: 0; right: 28%;
+    transform: scale(0.15);
+}
+
+.col-md-4.offset-md-4 .soc-icons {
+    margin-top: 25px;
+    margin-left: -200px; /* Изменено значение на -150px */
+    display: flex;
+    justify-content: start;
+}
+
+.col-md-4.offset-md-4 .soc-icons a {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    text-align: center;
+    transition: opacity .5s ease;
+}
+
+.col-md-4.offset-md-4 .soc-icons a:hover {
+    opacity: .5;
+}
+
+.col-md-4.offset-md-4 .soc-icons a i.bi {
+    font-size: 30px;
+    color: #1d5fd1;
+}
+
+.col-md-4.offset-md-4 .additional-text {
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: -200px; /* Изменено значение на -150px */
+}
+
+.contact-info {
+	margin-left: -200px;
+}
+
+.phone-number {
+	font-size: 20px;
+    font-weight: bold;
+    color: #14a44c;
+    display: unset;
+}
+
+/* HEADER MENU */
+ul.header-menu {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+ul.header-menu li {
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.2s ease;
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+ul.header-menu li a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+ul.header-menu li:hover,
+ul.header-menu li.active {
+    background-color: rgb(101, 47, 141);
+}
+
+ul.header-menu li:hover a,
+ul.header-menu li.active a {
+    color: #f0f3f7;
+}
+
+
+/*Header text*/
+.adress {
+	margin-top: -95px;
+	font-size: 18px;
+	color: #14a44c;
+	font-weight: bold;
+}
+
+.additional-text2 {
+	font-weight: 700;
+	margin-left: 300px;
+}
+
+.contact-info2 {
+	margin-left: 260px;
+}
+
+.additional-text3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #14a44c;
+	margin-left: 130px;
+}
+
+.hr-menu {
+	 border: 1px solid black;
+}
+
+/*Main*/
+.block img {
+    width: 160%;
+    height: 780px;
+}
+
+  .block p {
+     color: black;
+     position: absolute; top: 75%; left: 0; right: 0;
+     font-size: 65px;
+     font-weight: bold;
+     color: white;
+  }
+
+  .announcement p {
+    position: absolute; top: 90%; left: 23%; right: 0;
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .announcement2 p {
+    position: absolute; top: 97%; left: 36%; right: 0;
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+.btn_announcement {
+    width: 280px;
+    height: 50px;
+    background-color: rgb(101, 47, 141);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid white;
+    transition: background-color 1.5s;
+    font-size: 18px;
+
+    /* Изменения для центрирования */
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+ .block > :not(.block-image) {
+    margin-top: 30px; /* Измените значение в соответствии с вашими предпочтениями */
+}
+
+.btn_announcement:hover {
+    background-color: rgb(121, 67, 161);
+    border: none;
+}
+
+.fone {
+    height: 700px;
+    background-color: white;
+    text-align: center;
+}
+
+.fone h1 {
+    font-weight: bold;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.road {
+    width: 1500px;
+    height: 45px;
+    margin-bottom: 80px;
+    margin-top: -30px;
+}
+ 
+
+.video-container {
+    display: flex;
+    align-items: flex-start;
+     margin-left: 60px;
+    margin-top: 40px;
+}
+
+.video {
+    width: 600px;
+    height: 380px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.text-video {
+    width: 45%;
+    margin-left: 40px;  
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* BLOCK3 */
+.block3 {
+    height: 500px;
+    position: relative;
+    background-color: rgba(45, 43, 31, 0.8);
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+/* Стилі для контейнера з текстом і зображенням */
+.text_img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Стилі для заголовка (h1) в блоку 3 */
+.zag h1 {
+    text-align: left;
+    width: 45%;
+    margin-top: 10px; /* Изменено значение отступа сверху */
+    margin-left: 24px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: -20px; /* Изменено значение отрицательного отступа снизу */
+    color: white;
+}
+
+/* Стилі для тексту (text3) в блоку 3 */
+.text3 {
+    width: 75%;
+    font-size: 17px;
+    margin-left: 30px;
+    line-height: 1.8;
+    font-weight: normal;
+    margin-top: 20px; /* Изменено значение отступа сверху */
+    color: white;
+}
+
+/* Стилі для зображення (image3) в блоку 3 */
+.image3 img {
+    width: 90%;
+    height: auto;
+    max-width: 85%;
+    max-height: 100%;
+    margin-left: 40px; /* Изменено значение отступа с левой стороны */
+    margin-top: -70px;
+    margin-right: 20px;
+    border: 8px solid #fff;
+}
+
+/* Стили для блока с фоновой картинкой */
+.background-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* BLOCK3 */
+.block4 {
+    height: 530px;
+    background-image: url(https://lirp.cdn-website.com/55f1f912/dms3rep/multi/opt/bg-1920w-2880w-1920w.png)!important;
+    background-color: #652f8d !important;;
+}
+
+.text4 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+.text4-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}
+
+
+ /* Footer */
+  .footer {
+    background-color: #333333;
+  }
+
+  .footer h5 {
+    color: white;
+  }
+
+  .footer h6 {
+    color: #14a44c;
+  }
+
+
+  .footer .soc-icons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: start;
+}
+
+.footer .soc-icons a {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    text-align: center;
+    transition: opacity .5s ease;
+}
+
+.footer .soc-icons a i.bi {
+    font-size: 30px;
+    color: #1d5fd1;
+    /* Добавьте следующие стили для размера и отступов */
+    margin-right: 10px; /* Отступ между иконками */
+}
+
+.footer .soc-icons a:hover {
+    opacity: .5;
+}
+
+#schedule {
+    color: white;
+}
+
+#table1 a {
+    color: white;
+}
+
+#table1 a:hover {
+    color: #14a44c;;
+}
+
+.footer-menu li.active a {
+    color: #14a44c;
+}
+
+.footer .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .container .row .col-md-4 {
+    margin-top: 70px;
+    margin-left: 30px;
+    flex: 0 0 calc(33.3333% - 30px); /* Изменено значение для равномерного распределения на 3 столбца */
+}
+
+hr {
+    border-color: white;
+}
+
+/*Copyrite*/
+.copyrite {
+    height: 120px;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.copyrite a {
+    text-decoration: underline; /* Подчеркивание для ссылок */
+    color: white; /* Цвет текста ссылок */
+}
+
+.language-selector button {
+    background-color: #4287f5;
+    font-weight: bold;
+    padding: 8px 16px; /* Измените значения по вашему вкусу */
+    border: none;
+    outline: none;
+    border-radius: 5px; /* Или другое значение, которое вам нравится */
+}
+
+.language-selector button.leng {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #fdffa1;
+}
+
+.about-us {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.about-us h1 {
+    font-weight: 700;
+}
+
+.about-us .phone-number {
+    font-weight: bold;
+    color: #14a44c;
+}
+
+#online-courses {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#individual-driving-lessons {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#driving-lessons {
+     font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#review {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.slider img {
+    max-width: 80%; /* Максимальная ширина изображения 80% от контейнера */
+    max-height: 350px; /* Максимальная высота изображения 350px */
+    width: auto; /* Ширина изображения подстраивается автоматически */
+    height: auto; /* Высота изображения подстраивается автоматически */
+    display: block; /* Убедимся, что изображение является блочным элементом */
+    margin: 0 auto; /* Центрируем изображение внутри родительского контейнера */
+}
+
+/* Ваши текущие стили регистрация */
+.registration-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Добавим стили для скрытия формы по умолчанию */
+.hidden {
+  display: none;
+}
+
+
+
+ 
+
+ 
+
+
+
+  
+
+
+
+ 
+
+ 
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
